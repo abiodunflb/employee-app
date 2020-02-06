@@ -99,7 +99,7 @@ class EmployeeController extends Controller
         if($image != ''){
             $request->validate([
                 'fullname' => 'required|min:3',
-                'email' => 'required|unique:employees',
+                'email' => 'required',
                 'department' => 'required',
                 'gender' => 'required|min:3',
                 'image' =>  'image|max:2048'
