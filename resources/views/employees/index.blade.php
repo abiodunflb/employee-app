@@ -35,7 +35,12 @@
             </a>
         </div>
 
-        <table class="table table-dark table-striped table-hover table-responsive-sm">
+       <div class="container">
+
+       <div class="row">
+       
+       <div class="col-md-12">
+       <table class="table table-dark table-striped table-hover table-responsive-sm">
             <thead class="bg-info">
                 <tr class="text-center">
                     <th width="10%">Image</th>
@@ -81,5 +86,12 @@
 
             @endforelse
         </table>
+       
+       </div>
+       
+       </div>
+       
+       </div> 
+        
         {!! $employees->links() !!}
 @endsection
