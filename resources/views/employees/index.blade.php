@@ -29,19 +29,13 @@
     </div>
 <!-- container end -->
 
-        
-
-       <div class="container">
-
-       <div class="row">
-       
-       <div class="col-md-12">
-
-       <div align="right">
+        <div align="right">
             <a href="{{route('employees.create')}}" class="btn btn-primary">
             <span class="fa fa-plus-circle"> Add new Employee</span>
             </a>
         </div>
+
+       <div class="table-responsive">
        <table class="table table-dark table-striped table-hover table-responsive-sm">
             <thead class="bg-info">
                 <tr class="text-center">
@@ -88,11 +82,6 @@
 
             @endforelse
         </table>
-       
-       </div>
-       
-       </div>
-       
        </div> 
         
         {!! $employees->links() !!}
