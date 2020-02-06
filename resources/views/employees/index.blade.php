@@ -35,8 +35,8 @@
             </a>
         </div>
 
-       <div class="table-responsive" style="overflow-x:auto;">
-       <table class="table table-dark table-striped table-hover table-responsive-sm" width="100%">
+       <div class="table-responsive" style="overflow-x:auto;"> 
+       <table class="table  table-dark table-striped table-hover table-responsive-sm" width="100%">
             <thead class="bg-info">
                 <tr class="text-center">
                     <th width="10%">Image</th>
@@ -58,23 +58,23 @@
                     <td width="25%">
                         <form action="{{route('employees.destroy', $employee->id)}}" method="POST">
                             
-                            <div class="row">
-                            <div class="col-sm-6 col-md-6">
-                            <a href="{{route('employees.edit', $employee->id)}}" class="btn btn-sm btn-info">
+                            
+                            
+                            <a href="{{route('employees.edit', $employee->id)}}" class="btn btn-sm btn-info mt-1">
                                 <span class="fa fa-edit"></span> Edit
                                 
                             </a>
-                            </div>
+                            
 
-                            <div class="col-sm-6 col-md-6 mt-1">
-                            <a href="{{route('employees.show', $employee->id)}}" class="btn btn-sm btn-warning">
+                            
+                            <a href="{{route('employees.show', $employee->id)}}" class="btn btn-sm btn-warning mt-1">
                                 <span class="fa fa-eye"></span> View
                                 
                             </a>
-                            </div>
+                            
 
 
-                            </div>
+                            
                             
 
                             @csrf
