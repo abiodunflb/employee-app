@@ -11,7 +11,7 @@
     <div class="container">
         <h2 class="text-center alert alert-primary" style="color:red; text:bold"> 
             <span class="fab fa-laravel">
-            Employees Data with Laravel 6
+            Employees Data with Laravel 6/Bootstrap 4... by Afolabi Abiodun
             </span>
         </h2>
 
