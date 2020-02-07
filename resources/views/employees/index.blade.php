@@ -31,7 +31,7 @@
 
         <div align="right">
             <a href="{{route('employees.create')}}" class="btn btn-primary">
-            <span class="fa fa-plus-circle"> Add new Employee</span>
+            <span class="fa fa-plus-circle"> Add new Employeessss</span>
             </a>
         </div>
 
