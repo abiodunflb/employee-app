@@ -12,7 +12,7 @@
 */
 // Route::resource('employees', 'EmployeeController');
 Route::get('/', function () {
-    return redirect('employees');
+    // return redirect('employees');
     return view('bug');
 });
 
