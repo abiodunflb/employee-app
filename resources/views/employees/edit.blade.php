@@ -62,7 +62,7 @@
                             </div>
 
                             <div class="form-group col-md-3">
-                                <img src="{{ URL::to('/') }}/images/{{ $employee->image }}" class="rounded-circle" width="60" />
+                                <img src="{{ URL::to('/storage') }}/images/{{ $employee->image }}" class="rounded-circle" width="60" />
                                 <input type="hidden" name="hidden_image" value="{{ $employee->image }}" />
                             </div>
                         </div>

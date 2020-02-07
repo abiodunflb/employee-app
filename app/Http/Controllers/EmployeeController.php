@@ -46,7 +46,7 @@ class EmployeeController extends Controller
 
         $image = $request->file('image');
         $image_name = rand() . '.' . $image->getClientOriginalExtension();
-        $image->move(public_path('public/images'), $image_name);
+        $image->storeAs('public/images', $image_name);
         // $image->storeAs('public/images', $image_name);
 
         $data = array(
@@ -107,7 +107,7 @@ class EmployeeController extends Controller
             ]);
 
             $image_name = rand() . '.' . $image->getClientOriginalExtension();
-            $image->move(public_path('images'), $image_name);
+            $image->storeAs('public/images', $image_name);
         } else{
             $request->validate([
                 'fullname'    =>  'required',

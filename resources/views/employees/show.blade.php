@@ -25,7 +25,7 @@
 
 <div class="jumbotron text-center">
  <div align="center">
- <img src="{{ URL::to('/') }}/images/{{ $employee->image }}" class="rounded-circle" width='100' height="100" />
+ <img src="{{ URL::to('/storage') }}/images/{{ $employee->image }}" class="rounded-circle" width='100' height="100" />
 <div align="center">
 <h3><span >First Name :</span> {{ $employee->fullname }}</h3>
 <h3>Gender     : {{ $employee->gender }}  </h3>
