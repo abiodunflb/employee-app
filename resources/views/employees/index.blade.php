@@ -50,7 +50,7 @@
         @forelse($employees as $employee)
             <tbody>
                 <tr class="text-center">
-                <td><img src="{{ URL::to('/storage') }}/images/{{ $employee->image }}" class="rounded-circle" width="60" height="50" /></td>
+                <td><img src="/storage/img/{{$employee->image}}" class="rounded-circle" width="60" height="50" /></td>
                     <td>{{ $employee->fullname }}</td>
                     <td>{{ $employee->gender }}</td>
                     <td>{{ $employee->email }}</td>

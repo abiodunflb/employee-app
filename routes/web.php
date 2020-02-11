@@ -10,10 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-// Route::resource('employees', 'EmployeeController');
+Route::resource('employees', 'EmployeeController');
 Route::get('/', function () {
-    // return redirect('employees');
-    return view('bug');
+    return redirect('employees');
+    // return view('bug');
 });
 
 

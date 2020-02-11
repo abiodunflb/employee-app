@@ -46,8 +46,8 @@ class EmployeeController extends Controller
 
         $image = $request->file('image');
         $image_name = rand() . '.' . $image->getClientOriginalExtension();
-        $image->storeAs('images', $image_name);
-        
+        // $image->storeAs('images', $image_name);
+        $path = $request->file('image')->storeAs('public/img', $image_name);
         // $image->storeAs('public/images', $image_name);
 
         $data = array(
